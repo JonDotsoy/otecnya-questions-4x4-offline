@@ -11848,7 +11848,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 /* global localStorage */
 
-console.info("question" + ' v' + "2.0.2" + ' ' + ("1974d4983a898fbf94912a961aeb9cc4a1ac835b" && '(' + "1974d4983a898fbf94912a961aeb9cc4a1ac835b".slice(0, 7) + ')'));
+console.info("question" + ' v' + "2.0.2" + ' ' + ("448e934a0863cc451cbafb9af1b14740e275afee" && '(' + "448e934a0863cc451cbafb9af1b14740e275afee".slice(0, 7) + ')'));
 
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(104);
@@ -40091,11 +40091,11 @@ var RenderSesssion = function RenderSesssion(_ref3) {
         'Version v',
         "2.0.2",
         ' ',
-        "1974d4983a898fbf94912a961aeb9cc4a1ac835b" && React.createElement(
+        "448e934a0863cc451cbafb9af1b14740e275afee" && React.createElement(
           LinkToCommit,
-          { target: '_blank', href: 'https://github.com/JonDotsoy/' + "otecnya-questions-4x4-offline" + '/commit/' + "1974d4983a898fbf94912a961aeb9cc4a1ac835b" },
+          { target: '_blank', href: 'https://github.com/JonDotsoy/' + "otecnya-questions-4x4-offline" + '/commit/' + "448e934a0863cc451cbafb9af1b14740e275afee" },
           '(',
-          "1974d4983a898fbf94912a961aeb9cc4a1ac835b".slice(0, 7),
+          "448e934a0863cc451cbafb9af1b14740e275afee".slice(0, 7),
           ')'
         )
       )
