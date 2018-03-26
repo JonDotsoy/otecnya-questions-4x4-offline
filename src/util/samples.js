@@ -1,4 +1,5 @@
 
+const random = require('lodash/random')
 const sample = require('lodash/sample')
 
 module.exports.formatQuestion = formatQuestion
@@ -22,17 +23,5 @@ function formatQuestion ({stag, options, title, sort}) {
 }
 
 function sampleQuestions (questions, len = 10) {
-  const outsamples = []
-
-  while (outsamples.length < 10) {
-    const proposalSample = formatQuestion(sample(questions))
-
-    const o = outsamples.find(e => e.title === proposalSample.title)
-
-    if (o === undefined) {
-      outsamples.push(proposalSample)
-    }
-  }
-
-  return outsamples
+  return questions.concat().sort(() => random(-1, 1)).slice(0, len).map(formatQuestion)
 }
