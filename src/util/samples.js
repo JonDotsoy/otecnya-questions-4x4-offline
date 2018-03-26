@@ -8,7 +8,7 @@ module.exports.sampleQuestions = sampleQuestions
 function formatQuestion ({stag, options, title, sort}) {
   const optionCorrect = options[0]
 
-  let optionsOut = [...options].sort(() => sample([-1, 1])).sort(() => sample([-1, 1]))
+  let optionsOut = [...options].sort(() => sample([-1, 1]))
 
   if (sort) {
     optionsOut.sort(sort)
@@ -23,5 +23,5 @@ function formatQuestion ({stag, options, title, sort}) {
 }
 
 function sampleQuestions (questions, len = 10) {
-  return questions.concat().sort(() => random(-1, 1)).slice(0, len).map(formatQuestion)
+  return questions.concat().sort(() => sample([-1, 1])).slice(0, len).map(formatQuestion)
 }

@@ -39,7 +39,7 @@ require('./registerServiceWorker')({
 })
   .catch(console.error)
 
-if (/(true|1)/i.test(localStorage.autologin)) {
+if (/^(true|1)$/i.test(localStorage.autologin)) {
   store.dispatch({
     type: localStorage.autologin_type || 'sessin_login',
     rut: localStorage.autologin_rut || '111111111',
